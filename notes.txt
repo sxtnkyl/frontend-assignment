@@ -2,3 +2,10 @@ Items to add to context
 -modal closed ? null : index of movies
 -movies
 -search string
+
+TASKS COMPLETED:
+-folder structure
+-api routes
+-added .env to gitignore
+-html titles
+-components for initial load
