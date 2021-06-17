@@ -25,3 +25,15 @@ body {
   min-height: 100%;
   margin: 0px 10vw;
 }
+
+@media screen and (max-width: 1200px) {
+  #root {
+    margin: 0px 7vw;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #root {
+    margin: 0px 4vw;
+  }
+}

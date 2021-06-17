@@ -8,6 +8,12 @@ TODOS:
   Implement styled-components
   Add transitions
   Add magnifying glass to search logo
+  Get placeholder for missing images
+  Improve responsiveness on modal card
+  remove yellow outline on logo?
+    -alt text showing
+    //https://stackoverflow.com/questions/64610101/how-to-replace-html-img-broken-by-missing-or-erroring-image-src
+  restrict to 12 movies displayed?
 
 TASKS COMPLETED:
 -folder structure

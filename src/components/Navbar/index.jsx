@@ -5,13 +5,13 @@ import "./index.css";
 
 const Navbar = (props) => {
   return (
-    <div className="nav-container">
+    <nav className="nav-container">
       <Logo />
       <SearchBar
         onSearchBarChange={props.onSearchBarChange}
         fetchLatest={props.fetchLatest}
       />
-    </div>
+    </nav>
   );
 };
 

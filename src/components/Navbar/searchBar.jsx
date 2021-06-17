@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import "./searchBar.css";
 
 //searchBar controlled component > value
 //prop handles fetch
