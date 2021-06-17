@@ -6,12 +6,14 @@ import "./searchBar.css";
 //prop handles fetch
 
 const SearchBar = (props) => {
+  const { onSearchBarChange, fetchLatest } = props;
   const [value, setValue] = useState("");
+
   useEffect(() => {
     if (value === "") {
-      props.fetchLatest();
+      fetchLatest();
     } else {
-      props.onSearchBarChange(value);
+      onSearchBarChange(value);
     }
   }, [value]);
 

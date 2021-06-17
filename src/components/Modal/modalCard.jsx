@@ -26,7 +26,7 @@ const ModalCard = ({
       </div>
 
       <div className="modal-card-content">
-        <img className="modal-card-img" src={srcPath} />
+        <img className="modal-card-img" src={srcPath} alt="movie poster" />
         <div className="movie-info">
           <span>
             Release Date: <span style={{ fontWeight: 500 }}>{formatDate}</span>
