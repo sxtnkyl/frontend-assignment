@@ -1,11 +1,17 @@
-Items to add to context
--modal closed ? null : index of movies
--movies
--search string
+TODOS:
+  Items to add to context(remove prop drilling)
+    -modal closed ? null : index of movies
+    -movies
+    -search string
+  Troubleshoot search bug
+  Add Proptypes to rest of projects (not just display body)
+  Implement styled-components
+  Add transitions
+  Add magnifying glass to search logo
 
 TASKS COMPLETED:
 -folder structure
--api routes
+-hits all three required features (initial load, search, modal)
 -added .env to gitignore
 -html titles
--components for initial load
+-some Proptypes

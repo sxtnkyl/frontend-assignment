@@ -1,8 +1,16 @@
 import React from "react";
 
-const MovieCard = ({ title, poster_path, vote_average }) => {
+//onClick updates global context with key(index in movies)
+const MovieCard = ({
+  handleModalOpen,
+  index,
+  title,
+  poster_path,
+  vote_average,
+}) => {
   return (
-    <div>
+    <div onClick={() => handleModalOpen(index)}>
+      {index}
       {title}
       {poster_path}
       {vote_average}
