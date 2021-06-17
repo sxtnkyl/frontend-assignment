@@ -1,0 +1,4 @@
+Items to add to context
+-modal closed ? null : index of movies
+-movies
+-search string
