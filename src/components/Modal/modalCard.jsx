@@ -1,6 +1,7 @@
 import React from "react";
 import { movieProps } from "../../util/proptypes";
 import "./modalCard.css";
+import moment from "moment";
 
 const ModalCard = ({
   closeModal,
@@ -13,6 +14,10 @@ const ModalCard = ({
 }) => {
   const srcPath = process.env.REACT_APP_API_BASE_IMAGE_URL + "/" + poster_path;
 
+  let dateObj = new Date(release_date);
+  let momentObj = moment(dateObj);
+  const formatDate = momentObj.format("MMMM Do YYYY");
+
   return (
     <div className="modal-card" onClick={closeModal}>
       <div className="header">
@@ -24,8 +29,7 @@ const ModalCard = ({
         <img className="modal-card-img" src={srcPath} />
         <div className="movie-info">
           <span>
-            Release Date:{" "}
-            <span style={{ fontWeight: 500 }}>{release_date}</span>
+            Release Date: <span style={{ fontWeight: 500 }}>{formatDate}</span>
           </span>
           <span>{overview}</span>
           <span>

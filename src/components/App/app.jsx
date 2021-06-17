@@ -44,6 +44,8 @@ const App = () => {
           setMovies(res.data.results);
         }
       });
+    } else {
+      fetchLatestMovies();
     }
   };
 

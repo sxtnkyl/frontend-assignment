@@ -3,7 +3,6 @@ TODOS:
     -modal closed ? null : index of movies
     -movies
     -search string
-  Troubleshoot search bug
   Add Proptypes to rest of projects (not just display body)
   Implement styled-components
   Add transitions

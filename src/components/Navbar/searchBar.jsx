@@ -1,32 +1,28 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./searchBar.css";
 
 //searchBar controlled component > value
 //prop handles fetch
+
 const SearchBar = (props) => {
   const [value, setValue] = useState("");
-
-  const handleChange = (e) => {
-    //if typed, then back to empty- load newest
-    if (e.target.value == "") {
+  useEffect(() => {
+    if (value === "") {
       props.fetchLatest();
-    }
-    setValue(e.target.value);
-    //debouncer: dont send on every keypress- people type fast
-    setTimeout(() => {
+    } else {
       props.onSearchBarChange(value);
-    }, 500);
-  };
+    }
+  }, [value]);
 
   return (
     <form>
       <input
         type="text"
         placeholder="Search for a movie"
-        onChange={handleChange}
+        onChange={(e) => setValue(e.target.value)}
         value={value}
-        onSubmit={handleChange}
+        onSubmit={(e) => setValue(e.target.value)}
       />
     </form>
   );
