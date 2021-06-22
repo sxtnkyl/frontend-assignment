@@ -8,13 +8,14 @@
 
 html {
   height: 100%;
-  background-color: lightsteelblue;
+  /* background-color: lightsteelblue; */
+  background-color: #fff;
 }
 
 body {
   height: 100%;
   line-height: 1;
-  font-family: sans-serif;
+  font-family: Inter;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-overflow-scrolling: auto;

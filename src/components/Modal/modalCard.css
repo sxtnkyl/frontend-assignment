@@ -2,8 +2,8 @@
   z-index: 7;
   min-height: 400px;
   width: 50%;
-  border: 2px solid lightgray;
-  border-radius: 5px;
+  /* border: 2px solid lightgray; */
+  border-radius: 0px;
   background-color: white;
   padding: 20px;
   position: relative;
@@ -19,9 +19,10 @@
 }
 
 .close {
-  border: 2px solid lightgray;
+  border: 1px solid #141E35;
   cursor: pointer;
   padding: 5px;
+  font-weight: 100;
 }
 
 .modal-card-content {
